@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxnif3w1rebul"]
+[gd_scene load_steps=10 format=3 uid="uid://bxnif3w1rebul"]
 
 [ext_resource type="PackedScene" uid="uid://dfrcfehit3h2v" path="res://Scenes/player.tscn" id="1_7ufrn"]
 [ext_resource type="Texture2D" uid="uid://cihexl436bi75" path="res://assets/sprites/world_tileset.png" id="2_6iykr"]
 [ext_resource type="PackedScene" uid="uid://djyruxpo3jb7f" path="res://platform.tscn" id="3_fgtjx"]
+[ext_resource type="PackedScene" uid="uid://yi21g7cod1qi" path="res://coin.tscn" id="4_qw50l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_150hb"]
 texture = ExtResource("2_6iykr")
@@ -468,3 +469,19 @@ libraries = {
 "": SubResource("AnimationLibrary_rrebl")
 }
 autoplay = "Move"
+
+[node name="Coin" parent="." instance=ExtResource("4_qw50l")]
+position = Vector2(25, 21)
+
+[node name="Coin2" parent="." instance=ExtResource("4_qw50l")]
+position = Vector2(185, 22)
+
+[node name="Coin4" parent="." instance=ExtResource("4_qw50l")]
+position = Vector2(170, 22)
+
+[node name="Coin3" parent="." instance=ExtResource("4_qw50l")]
+position = Vector2(69, -90)
+
+[node name="Coin5" parent="." instance=ExtResource("4_qw50l")]
+position = Vector2(494, -10)
+rotation = 2.65305
