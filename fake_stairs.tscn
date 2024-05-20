@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://kkfnmdkgqbly"]
+
+[ext_resource type="Texture2D" uid="uid://cihexl436bi75" path="res://assets/sprites/world_tileset.png" id="1_3xo41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1g6kh"]
+size = Vector2(16, 32)
+
+[node name="FakeStairs" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3xo41")
+region_enabled = true
+region_rect = Rect2(32, 0, 16, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1g6kh")
+disabled = true
