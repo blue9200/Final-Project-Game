@@ -49,7 +49,6 @@ script = ExtResource("1_qmvea")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5p8d2")
 autoplay = "default"
-frame_progress = 0.143193
 
 [node name="Killsone" parent="." instance=ExtResource("2_nrirf")]
 
