@@ -5,16 +5,16 @@
 [ext_resource type="Texture2D" uid="uid://cihexl436bi75" path="res://assets/sprites/world_tileset.png" id="2_6iykr"]
 [ext_resource type="PackedScene" uid="uid://djyruxpo3jb7f" path="res://platform.tscn" id="3_fgtjx"]
 [ext_resource type="PackedScene" uid="uid://yi21g7cod1qi" path="res://coin.tscn" id="4_qw50l"]
-[ext_resource type="Texture2D" uid="uid://bpksj81nod0ex" path="res://assets/snow.png" id="4_qwb4m"]
+[ext_resource type="Texture2D" path="res://assets/snow.png" id="4_qwb4m"]
 [ext_resource type="Texture2D" uid="uid://cqe87vpdbbdy1" path="res://pyramid game background for game developers/transparent PNG/full-background.png" id="5_qc6ah"]
 [ext_resource type="PackedScene" uid="uid://feu70amx01u7" path="res://killsone.tscn" id="5_vsu7v"]
 [ext_resource type="PackedScene" uid="uid://ck3rxyhdkmb1j" path="res://slime.tscn" id="6_pcxts"]
 [ext_resource type="FontFile" uid="uid://c6t3c6w574rr3" path="res://assets/fonts/PixelOperator8.ttf" id="7_63tk3"]
-[ext_resource type="PackedScene" uid="uid://d0gyi0pg4ji88" path="res://fake_block.tscn" id="9_61bfa"]
-[ext_resource type="PackedScene" uid="uid://kkfnmdkgqbly" path="res://fake_stairs.tscn" id="10_ioj5p"]
-[ext_resource type="PackedScene" uid="uid://u5vqxft28n5f" path="res://carefull.tscn" id="11_5lkc5"]
-[ext_resource type="PackedScene" uid="uid://cbwgx7xpmdgnp" path="res://fake_stairs_2.tscn" id="12_1gcig"]
-[ext_resource type="PackedScene" uid="uid://b78rtqf0612l2" path="res://fake_block_2.tscn" id="13_8bypo"]
+[ext_resource type="PackedScene" path="res://fake_block.tscn" id="9_61bfa"]
+[ext_resource type="PackedScene" path="res://fake_stairs.tscn" id="10_ioj5p"]
+[ext_resource type="PackedScene" path="res://carefull.tscn" id="11_5lkc5"]
+[ext_resource type="PackedScene" path="res://fake_stairs_2.tscn" id="12_1gcig"]
+[ext_resource type="PackedScene" path="res://fake_block_2.tscn" id="13_8bypo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_150hb"]
 texture = ExtResource("2_6iykr")
@@ -56011,7 +56011,7 @@ position = Vector2(644, -107)
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Slime" parent="." instance=ExtResource("6_pcxts")]
-position = Vector2(527, 21)
+position = Vector2(526, 17)
 
 [node name="Label" type="Node" parent="."]
 

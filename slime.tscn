@@ -1,39 +1,74 @@
-[gd_scene load_steps=10 format=3 uid="uid://ck3rxyhdkmb1j"]
+[gd_scene load_steps=15 format=3 uid="uid://ck3rxyhdkmb1j"]
 
-[ext_resource type="Texture2D" uid="uid://b35nmg1eup4a3" path="res://assets/sprites/slime_green.png" id="1_3jpla"]
 [ext_resource type="Script" path="res://scripts/slime.gd" id="1_qmvea"]
+[ext_resource type="Texture2D" uid="uid://ca5jxouickpae" path="res://Shardsoul Slayer Sprite Sheet.png" id="2_laok0"]
 [ext_resource type="PackedScene" uid="uid://feu70amx01u7" path="res://killsone.tscn" id="2_nrirf"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ldyuw"]
-atlas = ExtResource("1_3jpla")
-region = Rect2(0, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_np2lk"]
+atlas = ExtResource("2_laok0")
+region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ixwb"]
-atlas = ExtResource("1_3jpla")
-region = Rect2(24, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_epg23"]
+atlas = ExtResource("2_laok0")
+region = Rect2(0, 64, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_61ocm"]
-atlas = ExtResource("1_3jpla")
-region = Rect2(48, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_e32of"]
+atlas = ExtResource("2_laok0")
+region = Rect2(64, 64, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_so8ig"]
-atlas = ExtResource("1_3jpla")
-region = Rect2(72, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d12d"]
+atlas = ExtResource("2_laok0")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tck8f"]
+atlas = ExtResource("2_laok0")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avdyy"]
+atlas = ExtResource("2_laok0")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52kkh"]
+atlas = ExtResource("2_laok0")
+region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4p8jh"]
+atlas = ExtResource("2_laok0")
+region = Rect2(384, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axy0s"]
+atlas = ExtResource("2_laok0")
+region = Rect2(448, 64, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5p8d2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ldyuw")
+"texture": SubResource("AtlasTexture_np2lk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1ixwb")
+"texture": SubResource("AtlasTexture_epg23")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_61ocm")
+"texture": SubResource("AtlasTexture_e32of")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_so8ig")
+"texture": SubResource("AtlasTexture_4d12d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tck8f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avdyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52kkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4p8jh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axy0s")
 }],
 "loop": true,
 "name": &"default",
@@ -47,8 +82,11 @@ size = Vector2(10, 11)
 script = ExtResource("1_qmvea")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.999999, -1)
+scale = Vector2(0.640625, 0.484375)
 sprite_frames = SubResource("SpriteFrames_5p8d2")
 autoplay = "default"
+frame_progress = 0.368542
 
 [node name="Killsone" parent="." instance=ExtResource("2_nrirf")]
 
