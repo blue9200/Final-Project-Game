@@ -1,17 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://u5vqxft28n5f"]
 
-[ext_resource type="Texture2D" uid="uid://cihexl436bi75" path="res://assets/sprites/world_tileset.png" id="1_sbp15"]
+[ext_resource type="Texture2D" uid="uid://bpksj81nod0ex" path="res://assets/snow.png" id="1_653as"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gdd3v"]
-size = Vector2(16, 18)
+size = Vector2(49, 18)
 
 [node name="Carefull" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_sbp15")
+texture = ExtResource("1_653as")
 region_enabled = true
-region_rect = Rect2(80, 31, 16, 17)
+region_rect = Rect2(0, 47, 49, 17)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_gdd3v")
 disabled = true
