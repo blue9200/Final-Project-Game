@@ -349,15 +349,15 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cyct3"]
-radius = 10.198
+radius = 6.0
 
 [node name="Player2" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_db44c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -7)
-scale = Vector2(0.7, 0.65)
+position = Vector2(-1, -6)
+scale = Vector2(0.6375, 0.55)
 sprite_frames = SubResource("SpriteFrames_udcai")
 animation = &"idle"
 autoplay = "idle"
